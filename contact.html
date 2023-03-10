@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <style>
+
+        .container{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        input,textarea{
+            padding: 0.4rem;
+        }
+
+        button{
+            padding: 0.4rem;
+            border-radius: 0.5rem;
+            background-color: violet;
+            border: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h2>
+        Please Contact Me
+    </h2>
+
+    <div class="">
+
+        <p>Name:</p>
+        <div class="container">
+            <input id="name-input" type="text">
+            <button id="delete-name">Delete Name</button> 
+            <button id="send-name">Send Name</button>
+        </div>
+
+        <p>Email:</p>
+        <div class="container">
+            <input id="mail-input" type="email">
+            <button id="delete-mail">Delete email</button>
+            <button id="send-mail">Send email</button>
+        </div>
+
+        <p>Message:</p>
+        <div class="container">
+            <textarea name="" id="message-input" cols="30" rows="2"></textarea>
+            <button id="delete-message">Delete Message</button>
+            <button id="send-message">Send Message</button>
+        </div>
+
+    </div>
+
+    <button id="send-all">
+        Send
+    </button>
+    <button id="reset">
+        Reset
+    </button>
+
+    <script src="./contact.js"></script>
+
+</body>
+</html>
