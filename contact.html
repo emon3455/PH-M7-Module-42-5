@@ -8,6 +8,9 @@
 
     <style>
 
+        .box{
+            margin-bottom: 0.5rem;
+        }
         .container{
             display: flex;
             align-items: center;
@@ -28,43 +31,52 @@
     </style>
 
 </head>
+
 <body>
     
-    <h2>
-        Please Contact Me
-    </h2>
+    <header>
+        <h2>
+            Please Contact Me
+        </h2>
+    </header>
 
-    <div class="">
 
-        <p>Name:</p>
-        <div class="container">
-            <input id="name-input" type="text">
-            <button id="delete-name">Delete Name</button> 
-            <button id="send-name">Send Name</button>
+
+   <section>
+        <div class="box">
+
+            <p>Name:</p>
+            <div class="container">
+                <input id="name-input" type="text">
+                <button id="delete-name">Delete Name</button> 
+                <button id="send-name">Send Name</button>
+            </div>
+
+            <p>Email:</p>
+            <div class="container">
+                <input id="mail-input" type="email">
+                <button id="delete-mail">Delete email</button>
+                <button id="send-mail">Send email</button>
+            </div>
+
+            <p>Message:</p>
+            <div class="container">
+                <textarea name="" id="message-input" cols="30" rows="2"></textarea>
+                <button id="delete-message">Delete Message</button>
+                <button id="send-message">Send Message</button>
+            </div>
+
         </div>
 
-        <p>Email:</p>
-        <div class="container">
-            <input id="mail-input" type="email">
-            <button id="delete-mail">Delete email</button>
-            <button id="send-mail">Send email</button>
+        <div class="box">
+            <button id="send-all">
+                Send
+            </button>
+            <button id="reset">
+                Reset
+            </button>
         </div>
-
-        <p>Message:</p>
-        <div class="container">
-            <textarea name="" id="message-input" cols="30" rows="2"></textarea>
-            <button id="delete-message">Delete Message</button>
-            <button id="send-message">Send Message</button>
-        </div>
-
-    </div>
-
-    <button id="send-all">
-        Send
-    </button>
-    <button id="reset">
-        Reset
-    </button>
+   </section>
 
     <script src="./contact.js"></script>
 
